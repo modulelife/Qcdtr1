@@ -3,11 +3,18 @@ COMMERCIAL LICENSE WITH THIRD-PARTY MIT COMPONENT
 Copyright (c) 2025 Cipher - All Rights Reserved
 
 This software and associated documentation files (the "Software") are 
-proprietary products owned exclusively by Cipher. 
+proprietary products owned exclusively by Cipher.
 
-Commercial use, distribution, or modification of this Software is 
-strictly prohibited without explicit written permission from 
-Cipher. To obtain licensing terms, contact: https://github.com/modulelife
+--- GRANT OF RIGHTS ---
+NON-COMMERCIAL USE IS EXPRESSLY PERMITTED WITHOUT RESTRICTION.
+Users may freely use, copy, and distribute the Software for non-commercial purposes including:
+• Personal/educational use
+• Academic research
+• Non-profit projects
+• Open source development
+
+COMMERCIAL USE, DISTRIBUTION, OR MODIFICATION REQUIRES EXPLICIT WRITTEN PERMISSION FROM CIPHER.
+To obtain commercial licensing terms, contact: https://github.com/modulelife
 
 --- THIRD-PARTY COMPONENT NOTICE ---
 The Software incorporates a modified version of Qulacs library:
@@ -45,8 +52,12 @@ SOFTWARE.
 ===============================================
 
 --- ADDITIONAL RESTRICTIONS ---
-1. Reverse engineering, decompilation, or disassembly of any binaries
+1. Reverse engineering, decompilation, or disassembly of any binaries 
    except the Qulacs component is strictly prohibited
-2. Any use of the non-Qulacs code constitutes acceptance of commercial
-   terms
-3. Removal of this license file automatically voids all usage rights
+2. Commercial use constitutes acceptance of commercial licensing terms
+3. Non-commercial users exempt from commercial restrictions
+4. Removal of this license file automatically voids all usage rights
+
+--- DEFINITIONS ---
+• NON-COMMERCIAL USE: Any use not intended for commercial advantage or monetary compensation
+• COMMERCIAL USE: Any use in connection with revenue generation, business operations, or professional services
