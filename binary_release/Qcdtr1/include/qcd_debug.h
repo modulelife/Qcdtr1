@@ -1,6 +1,10 @@
 #ifndef QCD_DEBUG_H
 #define QCD_DEBUG_H
+#ifdef __cplusplus
 #include <iostream>
+#else
+#include <stdio.h>
+#endif
 #include <qcd_api.h>
 
 #if defined(_DEBUG) || !defined(NDEBUG)
@@ -28,10 +32,14 @@ inline bool __QcdLogCall(const char* Statement, const char* File, int Line)
 {
     if (qcd_enum error = qcdGetError(); error != QCD_NO_ERROR)
     {
+#ifdef __cplusplus
 #ifdef QT_CORE_LIB
         qDebug() << "[Qcd Error] (" << error << ") " << "line " << Line << ": " << Statement << "; " << File;
 #else
         std::cerr << "[Qcd Error] (" << error << ") " << "line " << Line << ": " << Statement << "; " << File << std::endl;
+#endif
+#else
+        printf("[Qcd Error] (%d) line %d: %s; %s\n", error, Line, Statement, File);
 #endif
         return false;
     }
