@@ -33,11 +33,8 @@ inline bool __QcdLogCall(const char* Statement, const char* File, int Line)
     if (qcd_enum error = qcdGetError(); error != QCD_NO_ERROR)
     {
 #ifdef __cplusplus
-#ifdef QT_CORE_LIB
-        qDebug() << "[Qcd Error] (" << error << ") " << "line " << Line << ": " << Statement << "; " << File;
-#else
-        std::cerr << "[Qcd Error] (" << error << ") " << "line " << Line << ": " << Statement << "; " << File << std::endl;
-#endif
+        std::cerr << "[Qcd Error] (" << error << ") "
+                << "line " << Line << ": " << Statement << "; " << File << std::endl;
 #else
         printf("[Qcd Error] (%d) line %d: %s; %s\n", error, Line, Statement, File);
 #endif
@@ -47,3 +44,4 @@ inline bool __QcdLogCall(const char* Statement, const char* File, int Line)
 }
 
 #endif // QCD_DEBUG_H
+
