@@ -36,7 +36,7 @@ static void addMultiCZ(qcd_uint target_qubit,
     else {
         std::vector<qcd_bool> control_values(control_qubits.size(), QCD_TRUE);
 
-        QcDebug(qcdMultiControlU1Gate(target_qubit, M_PI,
+        QcDebug(qcdMultiControlGate(QCD_Z, target_qubit,
             control_qubits.data(),
             control_values.data(),
             control_qubits.size()));
