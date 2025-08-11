@@ -22,7 +22,7 @@ The Software incorporates a modified version of Qulacs library:
   - License: MIT License (full text below)
   - Modifications: Rebuilt and packaged as internal API implementation
   - Component usage: This library functions as internal computational 
-    backend with no exposed interfaces
+    engine with no exposed interfaces
 
 Users of this Software are granted rights ONLY for the Qulacs component 
 under the following MIT License terms:
