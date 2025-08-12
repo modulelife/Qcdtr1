@@ -1,13 +1,13 @@
 #ifndef QCD_DEBUG_H
 #define QCD_DEBUG_H
 
+
+#if defined(_DEBUG) || !defined(NDEBUG)
 #if defined(__cplusplus)
 #include <iostream>
 #else
 #include <stdio.h>
 #endif
-
-#if defined(_DEBUG) || !defined(NDEBUG)
 #include <qcd_api.h>
 
 #if defined(_MSC_VER)
