@@ -1,7 +1,7 @@
 # Quantum Computing Development technical release1 (Qcdtr1)
 
 ## Overview
-The QCD API is a high-performance quantum computing simulation backend designed for quantum algorithm development and experimentation. Key features include:
+The QCD is a high-performance quantum computing simulation backend designed for quantum algorithm development and experimentation. Key features include:
 
 1.Incorporates the Qulacs C++ library as internal engine. See their homepage->[Qulacs](https://github.com/qulacs/qulacs). Supporting up to 32 qubits(requires 64GB DRAM)
 
@@ -15,7 +15,7 @@ Non-commercial use: Free (academic/personal/open-source).
 Commercial use: Requires explicit permission (contact: [modulelife](https://github.com/modulelife))
 
 ## Core Concepts
-### Quantum circuits
+### _Quantum circuits_
 | API | usage |
 |------|------|
 | `qcdNewCircuit(qcd_uint Circuit_width)` | create a new circuit workbench |
@@ -25,7 +25,7 @@ Commercial use: Requires explicit permission (contact: [modulelife](https://gith
 | `qcdDeleteSegment(qcd_uint Segment_handle)` | delete a segment |
 | `qcd...Gate(...)` | add gates |
 | `qcdNoise(qcd_enum Noise_type, qcd_uint Target_qubit, double Probability)` | add noise |
-### Quantum simulation
+### _Quantum simulation_
 | API | usage |
 |------|------|
 | `qcd...Init(...)` | initialize quantum state |
